@@ -377,7 +377,7 @@
                         structured.params.filename = this.filename;
                     }
                     // value = this._buildHeaderValue(structured);
-+                   value = structured.value + "; filename=\"" + mimecodec.mimeWordEncode(structured.params.filename, 'B', Number.MAX_VALUE) + "\"";
+                    value = structured.value + "; filename=\"" + mimecodec.mimeWordEncode(structured.params.filename, 'B', Number.MAX_VALUE) + "\"";
                     break;
                 case 'Content-Type':
                     structured = mimecodec.parseHeaderValue(value);
